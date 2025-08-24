@@ -1,5 +1,10 @@
-### GET request to example server
-POST https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### Create a new user
+POST https://localhost:8081/api/users
+Content-Type: application/json
 
+{
+  "name": "John Doe",
+  "email": "Johndoe@gmail.com",
+  "about": "This is a sample user."
+}
 ###

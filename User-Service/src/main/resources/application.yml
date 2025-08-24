@@ -1,0 +1,19 @@
+
+  spring:
+    datasource:
+      url: jdbc:mysql://localhost:3306/microservices
+      username: springstudent
+      password: springstudent
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        hibernate:
+            ddl-auto: create
+        show-sql: true
+        properties:
+            hibernate:
+            format_sql: true
+            dialect: org.hibernate.dialect.MySQL8Dialect
+
+  server:
+    port: 8081
