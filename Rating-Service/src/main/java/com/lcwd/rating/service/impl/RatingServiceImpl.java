@@ -46,6 +46,6 @@ public class RatingServiceImpl implements RatingServive {
 
     @Override
     public List<Ratings> findRatingsByHotelId(String hotelId) {
-        return ratingRepository.findRatingsByUserId(hotelId);
+        return ratingRepository.findRatingsByHotelId(hotelId);
     }
 }

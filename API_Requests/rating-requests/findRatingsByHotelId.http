@@ -1,4 +1,4 @@
 ### GET request to example server
-GET http://localhost:8083/api/ratings/hotel/{hotelId}
+GET http://localhost:8083/api/ratings/hotel/1439ce10-2ace-48ab-8ad0-9dbd2874e418
 
 ###

@@ -1,2 +1,2 @@
 ### DELETE USER
-DELETE http://localhost:8081/api/users/7eb6fdf6-8031-4898-b83d-7668ab0763f9
+DELETE http://localhost:8081/api/users/a263d894-0b04-47d6-9c3f-5ee2b2252d8

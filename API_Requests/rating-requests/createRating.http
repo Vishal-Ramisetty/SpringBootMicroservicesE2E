@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "userId": "92091cab-f04f-4b25-81b5-71150ba8ccc4",
-  "hotelId": "69e5cd68-e0ca-4221-8fdf-5da9f420338c",
-  "feedback": " This is a good place to stay",
-  "rating": 10
+  "hotelId": "1439ce10-2ace-48ab-8ad0-9dbd2874e418",
+  "feedback": " It is a palace with great hospitality and wonderful ambience.",
+  "rating": 9
 }

@@ -15,6 +15,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(RatingNotFound.class)
     public ResponseEntity<ExceptionResponse> handleRatingNotFound(RatingNotFound ex){
+        logger.error("Exception caught: {}", ex.getStackTrace().toString());
         ExceptionResponse response =
                 ExceptionResponse.builder()
                         .message(ex.getMessage())

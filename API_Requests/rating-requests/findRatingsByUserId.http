@@ -1,4 +1,4 @@
 ### GET request to example server
-GET http://localhost:8083/api/ratings/user/141ae592-e3e6-4313-9716-22f9c8995b56
+GET http://localhost:8083/api/ratings/user/92091cab-f04f-4b25-81b5-71150ba8ccc4
 
 ###
