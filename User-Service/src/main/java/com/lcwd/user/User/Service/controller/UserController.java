@@ -25,7 +25,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<Users> createUser(@RequestBody Users user) {
         Users myuser = userService.saveUser(user);
-        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+        return ResponseEntity.status(HttpStatus.CREATED).body(myuser);
     }
 
 
@@ -41,9 +41,9 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(user);
     }
 
-    @PutMapping
-    public ResponseEntity<Users> updateUser(@RequestBody Users user) {
-        Users updatedUser = userService.saveUser(user);
+    @PutMapping("/{userId}")
+    public ResponseEntity<Users> updateUser(@PathVariable String userId, @RequestBody Users user) {
+        Users updatedUser = userService.updateUser(userId,user);
         return ResponseEntity.status(HttpStatus.OK).body(updatedUser);
     }
 

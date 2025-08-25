@@ -1,0 +1,2 @@
+### GET request to find all users
+GET http://localhost:8081/api/users
