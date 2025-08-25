@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    #    url: jdbc:postgresql://localhost:5432/microservices
+    url: jdbc:mysql://localhost:3306/microservices
+    username: springstudent
+    password: springstudent
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+logging:
+  level:
+    org:
+    springframework:
+      web: WARN
+      orm: WARN
+    root:
+      WARN
+
+springdoc:
+  api-docs:
+    path: /myapi-docs
+  swagger-ui:
+    path: /myapi-swagger-ui.html

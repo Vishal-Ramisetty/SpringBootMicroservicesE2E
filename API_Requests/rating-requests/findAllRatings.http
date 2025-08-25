@@ -1,0 +1,4 @@
+### GET request to find all ratings
+GET http://localhost:8083/api/ratings
+
+###

@@ -1,0 +1,10 @@
+### GET request to example server
+POST http://localhost:8082/api/hotels
+Content-Type: application/json
+
+{
+  "name": "Hotel Hills",
+  "address": "Thirupattur",
+  "about": "This is where my Brother's wedding is Happening"
+}
+###

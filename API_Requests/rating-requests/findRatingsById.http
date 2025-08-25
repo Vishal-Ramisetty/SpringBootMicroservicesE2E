@@ -1,0 +1,4 @@
+### GET request to find rating by ID
+GET http://localhost:8083/api/ratings/68ac47eee8b1ca6f7bfb41a1
+
+###
