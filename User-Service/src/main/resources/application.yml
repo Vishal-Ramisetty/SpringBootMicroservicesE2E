@@ -1,5 +1,7 @@
 
   spring:
+    application:
+      name: USER-SERVICE
     datasource:
       url: jdbc:mysql://localhost:3306/microservices
       username: springstudent
@@ -17,3 +19,13 @@
 
   server:
     port: 8081
+
+
+  eureka:
+    instance:
+      prefer-ip-address: true
+    client:
+      fetch-registry: true
+      register-with-eureka: true
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
