@@ -41,6 +41,12 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(user);
     }
 
+    @GetMapping("/{userId}/ratings")
+    public ResponseEntity<Users> getUserWithRatings(@PathVariable(name = "userId") String userId){
+        Users user = userService.findUserWithRatings(userId);
+        return ResponseEntity.status(HttpStatus.OK).body(user);
+    }
+
     @PutMapping("/{userId}")
     public ResponseEntity<Users> updateUser(@PathVariable String userId, @RequestBody Users user) {
         Users updatedUser = userService.updateUser(userId,user);

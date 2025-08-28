@@ -1,0 +1,2 @@
+### GET request to find user by ID
+GET http://localhost:8081/api/users/141ae592-e3e6-4313-9716-22f9c8995b56/ratings
