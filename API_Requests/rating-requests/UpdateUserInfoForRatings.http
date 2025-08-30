@@ -1,0 +1,9 @@
+PUT http://localhost:8083/api/ratings/userInfo/
+    141ae592-e3e6-4313-9716-22f9c8995b56?hotelId=c526d5a1-f432-43a6-acc1-6a737a456cf5
+
+Content-Type: application/json
+
+{
+"name": "Jake Gyllenhaal
+
+}

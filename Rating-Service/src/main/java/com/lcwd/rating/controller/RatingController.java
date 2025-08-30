@@ -1,6 +1,7 @@
 package com.lcwd.rating.controller;
 
 import com.lcwd.rating.entity.Ratings;
+import com.lcwd.rating.entity.Users;
 import com.lcwd.rating.service.impl.RatingServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -43,6 +44,17 @@ public class RatingController {
     @GetMapping("/hotel/{hotelId}")
     private ResponseEntity<List<Ratings>> getRatingsByHotelId(@PathVariable String hotelId){
         return ResponseEntity.ok().body(ratingService.findRatingsByHotelId(hotelId));
+    }
+
+    @GetMapping("/userInfo/{userId}")
+    private ResponseEntity<Users> getUserInfoWithRatings(@PathVariable String userId, @RequestParam(required = true) String hotelId){
+        return ResponseEntity.ok().body(ratingService.findUserInfoWithRatings(userId, hotelId));
+    }
+
+    @PutMapping("/userInfo/{userId}")
+    private ResponseEntity<Users>
+    getUserInfoWithRatings(@PathVariable String userId, @RequestParam(required = true) String hotelId,@RequestBody Users user){
+        return ResponseEntity.ok().body(ratingService.updateUserInfoWithRatings(userId, hotelId, user));
     }
 
 }

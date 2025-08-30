@@ -10,4 +10,6 @@ public interface RatingRepository extends MongoRepository<Ratings, String> {
     List<Ratings> findRatingsByUserId(String userId);
 
     List<Ratings> findRatingsByHotelId(String hotelId);
+
+    Ratings findRatingsByHotelIdAndUserId(String hotelId, String userId);
 }
